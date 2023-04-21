@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    justify-content: center;
+    color: orange;
+}
+
+.blogitems {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.blogtitle {
+    text-align: center;
+    margin-top: 44px;
+    box-shadow: 2px 2px 2px 2px;
+    margin: 30px 0px;
+}

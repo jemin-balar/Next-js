@@ -1,13 +1,10 @@
 import Head from "next/head";
-// import Image from "next/image";
-// import Script from "next/script";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import Dummy from "../Components/dummy";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
-console.log(styles);
 
 export default function Home() {
   return (
@@ -19,39 +16,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* <script src="/sc.js"></script> */}
       </Head>
-      <nav className={styles.mainnav}>
-        <ul>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
-          <Link href="/about">
-            <li>About</li>
-          </Link>
-          <Link href="/Blog">
-            <li>Blog</li>
-          </Link>
-          <Link href="/Contact">
-            <li>Contact</li>
-          </Link>
-        </ul>
-      </nav>
       {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
       <main className={styles.main}>
-        <Dummy />
-        <style jsx>
-          {`
-            .blogItem {
-              color: red;
-            }
-          `}
-        </style>
         <h1 className={styles.description}>Hunting Coding Blog</h1>
-        <div className="blogs">
-          <div className="blogItem dummy">
-            <h1>How To learn Next.js in 2023 </h1>
-            <p>javascript is the language to design logic for the web</p>
-          </div>
-        </div>
+        <Image
+          src="/mancoders.avif"
+          alt=""
+          width={300}
+          height={180}
+          className={styles.myimg}
+        />
+        <h1>How To learn Next.js in 2023 </h1>
         <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
