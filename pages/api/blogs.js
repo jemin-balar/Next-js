@@ -13,15 +13,4 @@ export default async function handler(req, res) {
     allBolgs.push(JSON.parse(myfile));
   }
   res.status(200).json(allBolgs);
-  // fs.promises.readdir(`blogdata`, (err, data) => {
-  //   console.log(data);
-  //   let allBolgs = [];
-  //   data.forEach((item) => {
-  //     console.log(item);
-  //     fs.readFile("blogdata/" + item, (d) => {
-  //       allBolgs.push(d);
-  //     });
-  //   });
-  // });
-  // res.status(200).json(JSON.parse(allBolgs));
 }
