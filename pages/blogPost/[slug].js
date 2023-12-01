@@ -4,10 +4,10 @@ import styles from "../../styles/Blog.module.css";
 
 const Slug = () => {
   const router = useRouter();
-  const { Slug } = router.query;
+  const { slug } = router.query;
   return (
     <>
-      <h1 className={styles.main}>Title of the page {Slug}</h1>
+      <h1 className={styles.main}>Title of the page {slug}</h1>
       <hr />
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis et
