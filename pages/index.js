@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Link from "next/link";
-import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +17,9 @@ export default function Home() {
       {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
       <main className={styles.main}>
         <h1 className={styles.description}>Hunting Coding Blog</h1>
-        <Image
+        <img
           src="/mancoders.avif"
-          alt=""
+          alt="hunting coder"
           width={300}
           height={180}
           className={styles.myimg}
